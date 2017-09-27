@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "@quramy/opencv-wasm-knnmatch-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "cpx \"*.{html,js,css}\" dist && cpx \"build/*\" dist/build && cpx \"img/*\" dist/img"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "gh-pages": "^1.0.0",
+    "http-server": "^0.10.0",
+    "rimraf": "^2.6.2"
+  }
+}
