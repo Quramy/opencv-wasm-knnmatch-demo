@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="loading">
+  <main>
+    <h1>Web Assembly OpenCV Feature Matching Demo(AKAZE, bruteforce)</h1>
+    <div class="input">
+      <div>
+        <header>
+          <h3>Image 1 (Drag &amp; drop your image file here)</h3>
+        </header>
+        <canvas id="img1"></canvas>
+      </div>
+      <div>
+        <header>
+          <h3>Image 2 (Drag &amp; drop your image file here)</h3>
+        </header>
+        <canvas id="img2"></canvas>
+      </div>
+    </div>
+    <div id="btn">
+      <span class="message">Match</span>
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+    <div class="output hide">
+      <div>
+        <canvas id="output"></canvas>
+      </div>
+    </div>
+  </main>
+
+  <div class="spin-wrap">
+    <span class="spin-message">Loading modules...</span>
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+
+  <footer>
+    <address>&copy; Quramy 2017-</address> <br />
+    <a href="https://github.com/Quramy/opencv-wasm-knnmatch-demo" target="_blank">Quramy/opencv-wasm-knnmatch-demo</a>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
