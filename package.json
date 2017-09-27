@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "cpx \"*.{html,js,css}\" dist && cpx \"build/*\" dist/build && cpx \"img/*\" dist/img"
+    "build": "cpx \"*.{html,js,css}\" dist && cpx \"build/*\" dist/build && cpx \"img/*\" dist/img",
+    "deploy": "npm run build && gh-paghes -d dist"
   },
   "devDependencies": {
     "cpx": "^1.5.0",
